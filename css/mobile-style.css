@@ -1,0 +1,171 @@
+@media screen and (max-width: 960px) {
+  /* * {
+    background-color: #ff000050;
+  } */
+
+  body {
+    font-size: 16px;
+  }
+
+  nav {
+    width: 40vw;
+    transform: translateX(40vw);
+  }
+
+  /* Header */
+
+  .header-container {
+    width: 100%;
+  }
+
+  .sec-cont {
+    width: 100%;
+  }
+
+  .ra-p-cont {
+    height: 30vw;
+  }
+
+  .ra-logo-cont {
+    height: 17.5vw;
+  }
+
+  .group-sec {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .activities {
+    width: 100%;
+    padding: 140px 10px;
+  }
+
+  .con-links {
+    width: 100%;
+    padding: 40px 10px 100px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  h1,
+  h2 {
+    font-size: 12vw;
+  }
+
+  nav {
+    width: 50vw;
+    transform: translateX(50vw);
+  }
+
+  .ra-logo-anim-cont {
+    height: 40.7vw;
+  }
+
+  .page-heading {
+    width: 47.1vw;
+  }
+
+  .page-heading h1 {
+    line-height: 12.2vw;
+  }
+
+  .sec-cont {
+    gap: 18.5vw;
+  }
+
+  .page-heading svg {
+    width: 31.2vw;
+  }
+
+  .short-abt-sec {
+    gap: 2.85vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    font-size: 18px;
+  }
+
+  .header-container {
+    height: 70px;
+  }
+
+  .header-logo {
+    height: 20px;
+  }
+
+  nav {
+    width: 50vw;
+    padding: 20px 10px 10px 15px;
+  }
+
+  .sec-cont {
+    flex-flow: column nowrap;
+  }
+
+  .ra-logo-anim-cont {
+    height: 61.5vw;
+  }
+
+  .page-heading {
+    width: 70.6vw;
+    order: -1;
+  }
+
+  .page-heading h1 {
+    line-height: 18.3vw;
+    font-size: 18vw;
+  }
+
+  .short-abt-sec {
+    padding: 100px 20px 0;
+  }
+
+  .brand-shapes svg {
+    height: 40px;
+  }
+
+  .about-paragraph {
+    width: 100%;
+  }
+
+  .this-me {
+    padding-top: 120px;
+  }
+
+  .ra-p-cont {
+    height: 70vw;
+  }
+
+  .ra-logo-cont {
+    height: 35vw;
+  }
+
+  .abt {
+    flex-flow: column nowrap;
+    padding: 140px 20px 0;
+    gap: 10vw;
+  }
+
+  .frml-about .abt-shape {
+    height: 305px;
+  }
+
+  .abt-copy {
+    order: 100;
+    width: 100%;
+  }
+
+  .acts-cont {
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 10vw;
+  }
+
+  .act-head {
+    margin-bottom: 5vw;
+  }
+
+
+}
