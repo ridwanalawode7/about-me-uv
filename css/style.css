@@ -1,4 +1,25 @@
 /* Let's Start */
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* background-color: green; */
+}
+
+@font-face {
+  font-family: 'Aileron';
+  src: url('aileron-kit/Aileron-Regular-webfont.woff') format('woff'),
+    url('./aileron-kit/Aileron-Regular-webfont.ttf') format('truetype'),
+    url('./aileron-kit/Aileron-Regular-webfont.eot') format('embedded-opentype');
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  src: url('./bebas-neue-kit/BebasNeue-Regular.woff') format('woff'),
+    url('./bebas-neue-kit/BebasNeue-Regular.ttf') format('truetype'),
+    url('./bebas-neue-kit/BebasNeue-Regular.eot') format('embedded-opentype');
+}
+
 body {
   --color1: #1a1a1a;
   --color2: white;
@@ -98,7 +119,8 @@ h3 {
   font-weight: normal;
 }
 
-path {
+path,
+rect {
   fill: var(--color2);
 }
 
@@ -107,11 +129,12 @@ path {
 /* |Header */
 
 header {
-  position: sticky;
+  position: fixed;
   width: 100%;
   top: 0;
+  left: 0;
   background-color: var(--color1);
-  z-index: 1000;
+  z-index: 10;
 }
 
 .header-container {
@@ -127,6 +150,7 @@ header {
 
 .color-scheme-button {
   height: 20px;
+  cursor: pointer;
 }
 
 .color-scheme-button svg {
@@ -152,15 +176,125 @@ header {
 
 .nav-button {
   height: 20px;
+  cursor: pointer;
 }
 
 .nav-button svg {
   height: 100%;
 }
 
+.bar {
+  width: 4px;
+  height: 4px;
+  margin: 4px auto;
+  border-radius: 2px;
+  background-color: var(--color2);
+}
+
+.opened {
+  position: relative;
+  /* transform: translate(-250px); */
+}
+
+.opened .btn-cont {
+  position: absolute;
+  z-index: 100;
+}
+
+/* | Navigation */
+nav {
+  position: fixed;
+  background: linear-gradient(to right, #000000cc, #00000077);
+  padding: 40px 50px 50px;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: calc((100vw - 960px) / 2 + 300px);
+  transform: translateX(calc((100vw - 960px) / 2 + 300px));
+  transition: transform 300ms;
+  z-index: 50;
+}
+
+.close-menu-btn {
+  height: 20px;
+  margin-bottom: 50px;
+  width: fit-content;
+}
+
+.close-menu-btn svg {
+  height: 100%;
+  cursor: pointer;
+}
+
+.close-menu-btn rect {
+  transition: 0, 0;
+  transition: transform 200ms;
+}
+
+.close-menu-btn:hover rect,
+.close-menu-btn:focus rect{
+  transform: scaleX(230%);
+}
+
+nav.menu-opened {
+  transform: translateX(0);
+}
+
+.nav-container {
+  height: calc(100% - 100px);
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  border: solid 2px grey;
+  border-radius: 50%;
+  transition: border-color 100ms, background-color 100ms;
+}
+
+.on-point.dot {
+  background-color: white;
+  border-color: white;
+}
+
+.dot ~ .nav-item-name {
+  color: grey;
+  transition: color 100ms, font-size 100ms;
+}
+
+.on-point.dot ~ .nav-item-name {
+  color: white;
+  font-size: 1.3em;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.line {
+  width: 3px;
+  background-color: grey;
+  flex-grow: 2;
+  margin-left: 3px;
+}
+
+.the-link {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.link-group {
+  margin-left: 50px;
+}
+
 /* | Intro-Section */
 .intro-cont {
-  margin-top: 100px;
+  padding-top: 120px;
 }
 .sec-cont {
   display: flex;
@@ -208,7 +342,7 @@ header {
 .short-abt-sec {
   flex-flow: column nowrap;
   gap: 20px;
-  margin-top: 120px;
+  padding-top: 120px;
 }
 
 .brand-shapes svg {
@@ -224,7 +358,7 @@ header {
 }
 
 .this-me {
-  margin-top: 120px;
+  padding-top: 120px;
 }
 
 .ra-p-cont {
@@ -254,7 +388,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 140px;
-  margin-top: 140px;
+  padding-top: 140px;
 }
 
 .frml-about .abt-shape {
@@ -285,7 +419,8 @@ header {
 
 .activities {
   width: 940px;
-  margin: 140px auto;
+  margin: 0 auto;
+  padding: 140px 0;
 }
 
 .sec-head {
@@ -353,7 +488,7 @@ header {
 
 .act-exp-btn svg {
   height: 100%;
-  transition: transform 1000ms;
+  transition: transform 300ms;
 }
 
 .expanded .act-exp-btn svg {
@@ -366,7 +501,8 @@ header {
 
 .con-links {
   width: 940px;
-  margin: 140px auto;
+  margin: 0 auto;
+  padding: 30px 0 100px;
 }
 
 .connect-header h1 {
@@ -401,7 +537,7 @@ footer img {
 }
 
 .foot-logo-symb {
-  width: 70px;
+  width: 40px;
 }
 
 .foot-logo-type {
@@ -409,7 +545,7 @@ footer img {
 }
 
 .year {
-  color: #727272;
+  color: var(--color2);
 }
 
 .logo-circle {
@@ -469,4 +605,35 @@ footer img {
 
 .anim-logo {
   width: 100px;
+}
+
+[data-section-index] {
+  transform: translateY(40px);
+  opacity: 0;
+  transition: transform 300ms, opacity 300ms;
+}
+
+[data-section-index].section-show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.circ1 {
+  transition: transform 100ms;
+}
+.circ2 {
+  transition: transform 100ms 100ms;
+}
+.circ3 {
+  transition: transform 100ms 200ms;
+}
+
+.nav-button:hover .circ1 {
+  transform: translateX(50%);
+}
+.nav-button:hover .circ2 {
+  transform: translateX(25%);
+}
+.nav-button:hover .circ3 {
+  transform: translateX(50%);
 }

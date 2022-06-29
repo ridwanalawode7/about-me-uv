@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="./js/light-dark-toggle.js"></script>
     <script defer src="./js/item-expand.js"></script>
+    <script defer src="./js/nav-show-toggle.js"></script>
+    <script defer src="./js/lawse.js"></script>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mobile-style.css">
     <title>Ridwan Alawode | Home</title>
   </head>
   <body>
     <div class="page-container">
       <header>
         <div class="header-container">
-          <div class="color-scheme-button">
+          <div id="clr-schm-btn" class="color-scheme-button" role="button" aria-label="Toggle Dark Mode" tabindex="0"> 
             <svg
               viewBox="0 0 37.454247 37.478554"
-              id="clr-schm-btn"
+              
               class="clr-schm-btn"
             >
               <defs id="defs2042" />
@@ -32,7 +35,7 @@
               />
             </svg>
           </div>
-          <div class="header-logo">
+          <div class="header-logo" role="img" aria-label="Ridwan Alawode Header Logo">
             <svg viewBox="0 0 186.73811 19.025999" version="1.1">
               <g id="layer1">
                 <path
@@ -64,10 +67,10 @@
               </g>
             </svg>
           </div>
-          <div class="nav-button">
+          <div class="nav-button" role="button" aria-label="Menu Button" tabindex="0">
             <svg
               id="svg9580"
-              viewBox="0 0 7.4786 39.406"
+              viewBox="0 0 25 39.406"
               version="1.1"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -78,17 +81,17 @@
                 stroke-width="26.457"
               >
                 <path
-                  id="path9767"
+                  class="circ1"
                   d="m7.4786 3.7393a3.7393 3.7393 0 0 1-3.7393 3.7393 3.7393 3.7393 0 0 1-3.7393-3.7393 3.7393 3.7393 0 0 1 3.7393-3.7393 3.7393 3.7393 0 0 1 3.7393 3.7393z"
                   stop-color="#000000"
                 />
                 <path
-                  id="circle10184"
+                  class="circ2"
                   d="m7.4786 19.703a3.7393 3.7393 0 0 1-3.7393 3.7393 3.7393 3.7393 0 0 1-3.7393-3.7393 3.7393 3.7393 0 0 1 3.7393-3.7393 3.7393 3.7393 0 0 1 3.7393 3.7393z"
                   stop-color="#000000"
                 />
                 <path
-                  id="circle10186"
+                  class="circ3"
                   d="m7.4786 35.667a3.7393 3.7393 0 0 1-3.7393 3.7393 3.7393 3.7393 0 0 1-3.7393-3.7393 3.7393 3.7393 0 0 1 3.7393-3.7393 3.7393 3.7393 0 0 1 3.7393 3.7393z"
                   stop-color="#000000"
                 />
@@ -97,11 +100,127 @@
           </div>
         </div>
       </header>
-      <nav></nav>
+      <nav class="">
+        <div class="close-menu-btn" role="button" aria-label="Menu Close Button" tabindex="0">
+          <svg viewBox="0 0 95.468071 57.577881">
+            <defs id="defs2" />
+            <g id="layer1">
+              <path
+                style="fill: white"
+                id="path186"
+                d="m 51.354858,33.371089 26.569066,1e-6 -17.72656,17.726567 6.48022,6.480225 L 95.468074,28.788941 66.677584,0 l -6.48022,6.480225 17.72656,17.726567 -26.569066,-1e-6 z"
+              />
+              <rect
+                style="
+                  fill: white;
+                  stroke-width: 9.16501;
+                  stroke-linecap: round;
+                  stroke-linejoin: round;
+                  stroke-dasharray: none;
+                "
+                id="rect7853"
+                width="26.569065"
+                height="9.164299"
+                x="0"
+                y="24.206791"
+                ry="3.5660048e-07"
+              />
+            </g>
+          </svg>
+        </div>
+        <div class="nav-container">
+          <div class="nav-item  ">
+            <a href="#section0">
+              <div class="the-link">
+                <div class="dot on-point" data-link-index="0"></div>
+                <div class="nav-item-name">Link</div>
+              </div>
+            </a>
+          </div>
+          <div class="line"></div>
+          <div class="nav-item">
+            <a href="#section1">
+              <div class="the-link">
+                <div class="dot" data-link-index="1"></div>
+                <div class="nav-item-name">Link</div>
+              </div>
+            </a>
+          </div>
+          <div class="line"></div>
+          <div class="nav-item">
+            <a href="#section2">
+              <div class="the-link">
+                <div class="dot" data-link-index="2"></div>
+                <div class="nav-item-name">Link</div>
+              </div>
+            </a>
+          </div>
+          <div class="line"></div>
+
+          <div class="nav-item parent-link-group">
+            <a href="#section3">
+              <div class="the-link">
+                <div class="dot" data-link-index="3[]"></div>
+                <div class="nav-item-name">Link Parent</div>
+              </div>
+            </a>
+            <div class="link-group">
+              <div class="nav-item">
+                <a href="#section3.0">
+                  <div class="the-link">
+                    <div class="dot"  data-link-index="3[0]"></div>
+                    <div class="nav-item-name">Link</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="line"></div>
+
+              <div class="nav-item">
+                <a href="#section3.1">
+                  <div class="the-link">
+                    <div class="dot" data-link-index="3[1]"></div>
+                    <div class="nav-item-name">Link</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="line"></div>
+
+              <div class="nav-item">
+                <a href="#section3.2">
+                  <div class="the-link">
+                    <div class="dot"  data-link-index="3[2]"></div>
+                    <div class="nav-item-name">Link</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="line"></div>
+          <div class="nav-item">
+            <a href="#section4">
+              <div class="the-link">
+                <div class="dot"  data-link-index="4"></div>
+                <div class="nav-item-name">Link</div>
+              </div>
+            </a>
+          </div>
+          <div class="line"></div>
+          <div class="nav-item">
+            <a href="#section5">
+              <div class="the-link">
+                <div class="dot"  data-link-index="5"></div>
+                <div class="nav-item-name">Link</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </nav>
       <main>
-        <section>
+        <section id="section0" data-section-index="0">
           <div class="sec-cont intro-cont">
-            <div class="ra-logo-anim-cont">
+            <div class="ra-logo-anim-cont" role="img" aria-label="Ridwan Alawode Spinning Logo Symbol">
               <svg viewBox="0 0 49.970699 69.496101">
                 <g id="layer1">
                   <path
@@ -157,9 +276,9 @@
           </div>
         </section>
 
-        <section>
+        <section id="section1"  data-section-index="1">
           <div class="short-abt-sec sec-cont">
-            <div class="brand-shapes">
+            <div class="brand-shapes" role="img" aria-label="Cirlce, Rectangle and Triangle">
               <svg
                 viewBox="0 0 139.21391 69.496277"
                 version="1.1"
@@ -212,9 +331,9 @@
           </div>
         </section>
 
-        <section>
+        <section id="section2"  data-section-index="2">
           <div class="this-me sec-cont">
-            <div class="ra-p-cont">
+            <div class="ra-p-cont" role="img" aria-label="Picture Of Ridwan Alawode, portrait">
               <svg viewBox="0 0 65.91922 58.652962">
                 <path
                   d="M 34.404297,0 C 19.646091,0 7.6347656,12.011326 7.6347656,26.769531 c 0,14.758206 12.0113254,26.769531 26.7695314,26.769531 14.758205,0 26.769531,-12.011325 26.769531,-26.769531 C 61.173828,12.011326 49.162502,0 34.404297,0 Z m 0,4.4628906 c 12.346764,0 22.308594,9.9598764 22.308594,22.3066404 0,12.346764 -9.96183,22.308594 -22.308594,22.308594 -12.346764,0 -22.308594,-9.96183 -22.308594,-22.308594 0,-12.346764 9.96183,-22.3066404 22.308594,-22.3066404 z"
@@ -236,7 +355,7 @@
               </svg>
             </div>
 
-            <div class="ra-logo-cont">
+            <div class="ra-logo-cont" role="img" aria-label="Ridwan Alawode Logo Type">
               <svg viewBox="0 0 102.04395 43.776001" version="1.1">
                 <path
                   id="path6218-1-9"
@@ -256,10 +375,10 @@
           </div>
         </section>
 
-        <section>
+        <section id="section3"  data-group-section-index="3[]">
           <div class="group-sec">
-            <div class="abt frml-about">
-              <div class="abt-shape">
+            <div class="abt frml-about" id="section3.0"  data-section-index="3[0]">
+              <div class="abt-shape" role="img" aria-label="Spinning Rectangle">
                 <svg
                   viewBox="0 0 26 69.996101"
                   version="1.1"
@@ -290,8 +409,8 @@
               </div>
             </div>
 
-            <div class="abt pers-about">
-              <div class="abt-shape">
+            <div class="abt pers-about" id="section3.1"  data-section-index="3[1]">
+              <div class="abt-shape" role="img" aria-label="Spinning Circle">
                 <svg
                   viewBox="0 0 47.998051 47.99805"
                   version="1.1"
@@ -321,8 +440,8 @@
               </div>
             </div>
 
-            <div class="abt ecc-about">
-              <div class="abt-shape">
+            <div class="abt ecc-about" id="section3.2" data-section-index="3[2]">
+              <div class="abt-shape" role="img" aria-label="Spinning Rectangle">
                 <svg
                   viewBox="0 0 50.826172 50.826179"
                   version="1.1"
@@ -354,7 +473,7 @@
           </div>
         </section>
 
-        <section>
+        <section id="section4" data-section-index="4">
           <div class="activities">
             <div class="sec-head"><h2>WHAT AM I UP TO?</h2></div>
             <div class="acts-cont">
@@ -610,11 +729,27 @@
             </div>
           </div>
         </section>
-        <section>
+
+        <script>
+          const setAttributes = (el, attrs) => {
+            for (const key in attrs) {
+              el.setAttribute(key, attrs[key]);
+            }
+          }
+
+          document.querySelectorAll('.act-exp-btn').forEach((x) => {
+            setAttributes(x, {
+              "role":"button",
+              "aria-label":"Expand Activities",
+              "tabindex":"0"
+            })
+          })
+        </script>
+        <section id="section5" data-section-index="5">
           <div class="con-links">
             <div class="connect-header"><h1>CONNECT WITH ME!</h1></div>
             <div class="social-links">
-              <a href="http://">
+              <a href="http://" aria-label="Link to Github account (ridwanalawode7)">
                 <div class="link">
                   <svg
                     viewBox="0 0 48 48"
@@ -664,7 +799,7 @@
                   </svg>
                 </div>
               </a>
-              <a href="http://">
+              <a href="http://" aria-label="Link to LinkendIn account">
                 <div class="link">
                   <svg
                     viewBox="0 0 48 48"
@@ -679,7 +814,7 @@
                   </svg>
                 </div>
               </a>
-              <a href="http://">
+              <a href="http://" aria-label="Link to Twitter Account">
                 <div class="link">
                   <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -691,7 +826,7 @@
                   </svg>
                 </div>
               </a>
-              <a href="http://">
+              <a href="http://" aria-label="Link to Instagram">
                 <div class="link">
                   <svg
                     viewBox="0 0 48 48"

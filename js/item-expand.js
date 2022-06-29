@@ -5,4 +5,9 @@ expandBtns.forEach((x) => {
     let thisActItem = e.currentTarget.parentElement.parentElement;
     thisActItem.classList.toggle('expanded');
   });
+  x.addEventListener('keydown', (e) => {
+    if (e.keyCode == 13) {
+      x.click();
+    }
+  });
 });

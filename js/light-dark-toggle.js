@@ -25,3 +25,17 @@ clrSchmBtn.addEventListener('click', () => {
   }
   localStorage.setItem('ridBioTheme', theme);
 });
+
+// clrSchmBtn.addEventListener('keydown', (e) => {
+//   console.log('working');
+//   if (e.keyCode == 13) {
+//     clrSchmBtn.click();
+//   }
+// });
+
+clrSchmBtn.addEventListener('keydown', (e) => {
+  console.log('working');
+  if ((e.keyCode == 13)) {
+    clrSchmBtn.click();
+  }
+});
