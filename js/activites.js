@@ -1,40 +1,61 @@
 //This manages the activites Listed in the activities section
 
 const LEARNING = [
-    {
-        actName: 'Something',
-        actMeta: 'Something else',
-        actDesc:
-      `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi molestias ipsum minus maiores tempora dolores maxime sapiente placeat dolorem architecto expedita, ex labore quasi. Dicta dolore minima facere commodi nemo?`,
-    },
+  {
+    actName: 'Mechanics Of Materials',
+    actMeta: 'Engineering',
+    actDesc: `The field of mechanics of materials, typically refers to various methods of calculating the stresses and strains in structural members, such as beams, columns, and shafts.`,
+  },
+  {
+    actName: 'React Js',
+    actMeta: 'Programming',
+    actDesc: `React is a free and open-source front-end JavaScript library for building user interfaces based on UI components. It is maintained by Meta and a community of individual developers and companies.`,
+  },
+  {
+    actName: 'Node Js',
+    actMeta: 'Programming',
+    actDesc: `Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser, which was designed to build scalable network applications.`,
+  },
+  {
+    actName: 'Blender',
+    actMeta: 'Design',
+    actDesc: `Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D-printed models, motion graphics, interactive 3D applications, virtual reality, and, formerly, video games.`,
+  },
 ];
 
 const PROJECTS = [
-    {
-        actName: 'Something',
-        actMeta: 'Something else',
-        actDesc:
-        `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi molestias ipsum minus maiores tempora dolores maxime sapiente placeat dolorem architecto expedita, ex labore quasi. Dicta dolore minima facere commodi nemo?`,
-    },
+  {
+    actName: 'A.S.S.I.C',
+    actMeta: 'Website',
+    actDesc: `Advanced Space System Information Catalogue is a personal project that aims to create a space information website offering information about what is known about the universe for educative purpose.`,
+  },
+  {
+    actName: 'My Web Dev Portfolio Website',
+    actMeta: 'Website',
+    actDesc: `This objective of this project is to build a wed developer portfolio website that showcases my skills, projects and experiences as a web developer.`,
+  },
 ];
 
 const BOOKS = [
-    {
-        actName: 'Something',
-        actMeta: 'Something else',
-        actDesc:
-        `Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi molestias ipsum minus maiores tempora dolores maxime sapiente placeat dolorem architecto expedita, ex labore quasi. Dicta dolore minima facere commodi nemo?`,
-    },
+  {
+    actName: `Quiet: The Power of Introverts in a World That Can't Stop Talking`,
+    actMeta: 'by Susan Cain',
+    actDesc: `Quiet is a 2012 nonfiction book written by American author and lecturer Susan Cain. Cain argues that modern Western culture misunderstands and undervalues the traits and capabilities of introverted people, leading to "a colossal waste of talent, energy, and happiness".`,
+  },
+  {
+    actName: `Science and Human Behavior`,
+    actMeta: 'by Burrhus Frederic Skinner',
+    actDesc: `A detailed study of scientific theories of human nature and the possible ways in which human behavior can be predicted and controlled.`,
+  },
 ];
-
 
 const LEARNING_CONTAINER = document.getElementById('learning_');
 const PROJECTS_CONTAINER = document.getElementById('projects_');
 const BOOKS_CONTAINER = document.getElementById('books_');
 
 function displayActivities(activityObject, activityRoot) {
-    for (const entry of activityObject) {
-      activityRoot.innerHTML += `<div class="act-item">
+  for (const entry of activityObject) {
+    activityRoot.innerHTML += `<div class="act-item">
                     <div class="act-name-head">
                       <div class="act-name"><h4>${entry.actName}</h4></div>
                       <div class="act-exp-btn" role="button" aria-label="Expand Activities" tabindex="0">
@@ -54,7 +75,7 @@ function displayActivities(activityObject, activityRoot) {
                       <p>${entry.actDesc}</p>
                     </div>
                   </div>`;
-    }
+  }
 }
 
 displayActivities(LEARNING, LEARNING_CONTAINER);
