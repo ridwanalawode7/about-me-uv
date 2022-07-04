@@ -53,7 +53,7 @@ function isPartiallyVisible(el) {
   var top = elementBoundary.top;
   var bottom = elementBoundary.bottom;
   var height = elementBoundary.height;
-  return bottom >= height / 3 &&  window.innerHeight - top >= height / 3;
+  return bottom >= 20 &&  window.innerHeight - top >= height / 3;
 }
 
 function isGroupSecVis(el) {

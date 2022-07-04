@@ -52,6 +52,15 @@ body.light-theme {
   opacity: 0;
 }
 
+.my-img {
+  filter: brightness(150%);
+  transition: filter 200ms;
+}
+
+.light-theme .my-img {
+  filter: brightness(100%);
+}
+
 * {
   box-sizing: border-box;
   transition: color 100ms, fill 200ms, background-color 200ms, stroke 200ms;
@@ -122,6 +131,7 @@ h3 {
 path,
 rect {
   fill: var(--color2);
+  transform: fill 200ms;
 }
 
 /* |Layout */

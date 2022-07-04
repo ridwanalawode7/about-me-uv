@@ -8,6 +8,7 @@
   }
 
   nav {
+    background-color: #000000de;
     width: 40vw;
     transform: translateX(40vw);
   }
@@ -56,6 +57,18 @@
     width: 50vw;
     transform: translateX(50vw);
   }
+  
+  .the-link {
+    gap: 7px;
+  }
+  
+  .nav-item-name {
+    font-size: 0.6em;
+  }
+
+  .on-point.dot ~ .nav-item-name {
+    font-size: 0.7rem;
+  }
 
   .ra-logo-anim-cont {
     height: 40.7vw;
@@ -72,11 +85,11 @@
   .sec-cont {
     gap: 18.5vw;
   }
-
+  
   .page-heading svg {
     width: 31.2vw;
   }
-
+  
   .short-abt-sec {
     gap: 2.85vw;
   }
@@ -96,8 +109,9 @@
   }
 
   nav {
-    width: 50vw;
-    padding: 20px 10px 10px 15px;
+    width: 180px;
+    transform: translateX(180px);
+    padding: 20px 10px 50px 15px;
   }
 
   .sec-cont {
@@ -166,6 +180,4 @@
   .act-head {
     margin-bottom: 5vw;
   }
-
-
 }
