@@ -1,4 +1,5 @@
 //This activates activates link based on the currently viewed element
+
 let isScrolling = false;
 
 window.addEventListener('scroll', throttleScroll, false);
@@ -13,12 +14,16 @@ function throttleScroll(e) {
   isScrolling = true;
 }
 
-document.addEventListener('DOMContentLoaded', scrolling, false);
+window.addEventListener('load', () => {
+  setTimeout(scrolling, 3010);
+  // document.addEventListener('DOMContentLoaded', scrolling, false);
+})
 
 let sections = document.querySelectorAll('[data-section-index]');
 let groupSections = document.querySelectorAll('[data-group-section-index]');
 
 function scrolling(e) {
+  console.log('Is Scrolling')
   sections.forEach((element) => {
     let linkIndex = element.getAttribute('data-section-index');
     if (isPartiallyVisible(element)) {
