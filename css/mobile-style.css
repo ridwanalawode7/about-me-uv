@@ -10,7 +10,7 @@
   nav {
     background-color: #000000de;
     width: 40vw;
-    transform: translateX(40vw);
+    transform: translateX(-40vw);
   }
 
   /* Header */
@@ -55,7 +55,7 @@
 
   nav {
     width: 50vw;
-    transform: translateX(50vw);
+    transform: translateX(-50vw);
   }
   
   .the-link {
@@ -110,7 +110,7 @@
 
   nav {
     width: 180px;
-    transform: translateX(180px);
+    transform: translateX(-180px);
     padding: 20px 10px 50px 15px;
   }
 
