@@ -612,7 +612,7 @@ footer img {
   animation: rotate 5s linear 1.5s infinite;
 }
 
-/* @keyframes rotate {
+@keyframes rotate {
   from {
     transform: rotateY(0deg);
   }
@@ -636,7 +636,7 @@ footer img {
     width: 70%;
     animation-timing-function: ease-out;
   }
-} */
+}
 
 .anim-logo {
   width: 100px;
