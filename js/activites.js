@@ -96,7 +96,6 @@ function createAnchorLinks(linkObject) {
 
   for (const iterator of linkObject) {
     htmlLinks += `<a href=${iterator.linkUrl}>${iterator.linkText}</a>`;
-    console.log(iterator);
   }
 
   return htmlLinks;
